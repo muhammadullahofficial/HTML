@@ -1,0 +1,1217 @@
+<!-- This file is prepared by Muhammad Ullah on 24/10/2024. This is the complete notes and example of HTML in one single file. You don't have to go to Google, YouTube etc, each and everything is collected here by Muhammad Ullah. Subscribe his YouTube channel here for more amazing content like this. https://youtube.com/@codingheropro?si=1aGdkwV1F-DaAoKG -->
+
+<!-- Here is a comprehensive list of all the standard HTML tags, grouped by their functionality:
+
+1. Document Structure Tags:
+<!DOCTYPE>: Defines the document type (HTML5).
+<html>: The root element of an HTML document.
+<head>: Contains metadata, title, and links to stylesheets/scripts.
+<title>: Sets the title of the document (shown in browser tab).
+<meta>: Defines metadata about the document (character set, author, viewport settings).
+<body>: Contains the content of the HTML document.
+<base>: Specifies a base URL for relative links.
+
+2. Text Content Tags:
+
+<h1> to <h6>: Headings, with <h1> being the highest level.
+<p>: Paragraph.
+<span>: Inline container for text.
+<br>: Line break.
+<hr>: Horizontal rule (thematic break).
+<strong>: Bold text, with semantic emphasis.
+<b>: Bold text without semantic emphasis.
+<em>: Italic text, with semantic emphasis.
+<i>: Italic text without semantic emphasis.
+<mark>: Highlighted or marked text.
+<small>: Smaller text.
+<del>: Strikethrough text (deleted content).
+<ins>: Inserted text (underlined by default).
+<sub>: Subscript text.
+<sup>: Superscript text.
+<blockquote>: Block quote.
+<q>: Inline quote.
+<code>: Inline code snippet.
+<pre>: Preformatted text (preserves whitespace).
+<abbr>: Abbreviation or acronym.
+<cite>: Cites a title of a work.
+<dfn>: Definition term.
+<kbd>: Represents user keyboard input.
+<samp>: Represents output from a computer program.
+<var>: Variable in mathematical expressions or programming contexts.
+<bdi>: Isolates text that might be formatted in a different direction.
+<bdo>: Overrides the current text direction.
+
+3. Links & Media Tags:
+
+<a>: Anchor (hyperlink).
+<img>: Embeds an image.
+<figure>: Groups content like images with captions.
+<figcaption>: Caption for a figure.
+<audio>: Embeds sound content.
+<video>: Embeds video content.
+<source>: Specifies media resources for <audio> or <video>.
+<track>: Specifies text tracks for <video> or <audio>.
+<iframe>: Embeds another HTML page.
+<embed>: Embeds external content (like multimedia).
+<object>: Embeds external resources (e.g., multimedia or plugin content).
+<param>: Parameters for the <object> element.
+<map>: Defines an image map (clickable areas on an image).
+<area>: Defines clickable areas within an image map.
+
+4. Form & Input Tags:
+
+<form>: Creates a form for user input.
+<input>: Defines various types of input controls.
+<textarea>: Multiline text input control.
+<button>: A clickable button.
+<select>: A dropdown list.
+<option>: An option in a dropdown list.
+<optgroup>: Groups related options in a dropdown list.
+<label>: Label for an <input> element.
+<fieldset>: Groups related elements in a form.
+<legend>: Caption for a <fieldset>.
+<datalist>: Provides a list of predefined options for an <input>.
+<output>: Represents the result of a calculation or user action.
+
+5. Table Tags:
+
+<table>: Creates a table.
+<caption>: Table caption.
+<thead>: Groups the header content in a table.
+<tbody>: Groups the body content in a table.
+<tfoot>: Groups the footer content in a table.
+<tr>: Defines a row in a table.
+<th>: Defines a header cell in a table.
+<td>: Defines a standard cell in a table.
+<colgroup>: Groups columns in a table for styling.
+<col>: Specifies column properties for each column within a <colgroup>.
+
+6. List Tags:
+
+<ul>: Unordered (bulleted) list.
+<ol>: Ordered (numbered) list.
+<li>: List item.
+<dl>: Description list (name/value pairs).
+<dt>: Term/name in a description list.
+<dd>: Description/details of a term in a description list.
+
+7. Semantic HTML5 Tags:
+
+<header>: Defines a header for a section or page.
+<footer>: Defines a footer for a section or page.
+<nav>: Defines navigation links.
+<article>: Represents an independent piece of content.
+<section>: Represents a section of content.
+<aside>: Defines content aside from the main content (like a sidebar).
+<main>: Specifies the main content of the document.
+<figure>: Self-contained content, such as illustrations, diagrams, or photos.
+<figcaption>: Caption for the <figure> element.
+
+<mark>: Highlighted text.
+
+8. Scripting & Interactive Tags:
+<script>: Embeds or references JavaScript.
+<noscript>: Content to display if JavaScript is not supported.
+<canvas>: A container for graphics (via JavaScript).
+<svg>: Embeds Scalable Vector Graphics (SVG).
+<math>: Embeds mathematical expressions (MathML).
+
+9. Styles & Meta Tags:
+
+<style>: Embeds CSS styles in the document.
+<link>: Links to external resources (e.g., stylesheets).
+<meta>: Metadata about the HTML document (character set, description, etc.).
+
+10. Miscellaneous Tags:
+
+<div>: Generic container for block-level content.
+<span>: Generic container for inline content.
+<details>: Creates a disclosure widget (used with <summary>).
+<summary>: Defines a visible heading for the <details> element.
+<dialog>: Represents a dialog box or window.
+<template>: Declares a fragment of HTML that can be cloned and inserted.
+<slot>: Placeholder for the shadow DOM.
+This list includes most of the common HTML tags you’ll encounter when working with web development. Some tags are deprecated and should not be used in modern HTML5 development, such as <center>, <font>, and <frame>. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Complete Notes</title>
+    <style>
+      .container {
+        background-color: lightblue;
+        padding: 20px;
+        margin: 10px;
+        border: 2px solid navy;
+      }
+      .highlight {
+        color: brown;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Basic Tags in HTML:
+1. Headings:
+There are 6 headings, H1, h2, h3 and so on. Use one H1 heading per page.Don't use more than one h1 headings per page. Use keywords in headings to rank in Google. Always use headings in proper hirarchy as given by the HTML such as use h1, then h2, then h3 and so on.  -->
+
+    <h1>This is h1 heading</h1>
+    <h2>This is h2 heading</h2>
+    <h3>This is h3 heading</h3>
+    <h4>This is h4 heading</h4>
+    <h5>This is h5 heading</h5>
+    <h6>This is h6 heading</h6>
+
+    <!-- What is HTML element?
+HTML Element = Starting Tag + Content + Ending Tag -->
+
+    <!-- Paragraph Tag:
+In HTML, paragraphs are defined using the <p> tag. This tag is used to group blocks of text into paragraphs, which are automatically separated by a bit of space in the browser. -->
+
+    <hr />
+    <p>
+      That's amazing! Starting your journey with HTML is a big step, and it's
+      the foundation of everything you'll build in the future. Every great
+      developer once stood where you are now, looking at that first blank page,
+      ready to bring their vision to life. Remember, every line of code you
+      write is a step toward creating something new, something that can reach
+      the world. Don’t be afraid to experiment, make mistakes, and learn as you
+      go. With patience and persistence, you'll turn that simple HTML page into
+      something extraordinary. This is just the beginning of an exciting
+      adventure!
+    </p>
+    <hr />
+    <!-- The Anchor Tag:
+  In HTML, the anchor tag (<a>) is used to create hyperlinks. These links can direct users to another webpage, a specific section within the same page, or even trigger downloads.
+
+   Syntax:
+   <a href="URL">Link Text</a>
+  
+The href attribute specifies where the link will take you.
+The target="_blank" attribute opens the link in a new tab.
+Anchor tags can also link to specific sections of a page by using an ID (internal linking).
+ -->
+
+    <p>
+      YouTube is the world's leading video sharing platform.<a
+        href="https://www.youtube.com/"
+        >Visit YouTube
+      </a>
+      right now to check out how it's working. It has a very strict algorithm to
+      protect users from immoral content.
+    </p>
+
+    <!-- The Img Tag:
+
+The <img> tag in HTML is used to embed images into a webpage. It is an empty tag, meaning it doesn't require a closing tag. The most important attributes for the <img> tag are src, which specifies the image's URL, and alt, which provides alternative text in case the image can't be displayed.
+
+Basic Syntax:
+
+<img src="image-url.jpg" alt="description of the image">
+
+src: Specifies the path to the image file. It can be a relative or absolute URL.
+alt: Provides alternative text for accessibility or if the image fails to load.
+width and height: Optional attributes to control the dimensions of the image.
+
+src: Can point to an image file hosted locally or on the web.
+alt: Helps with accessibility, providing screen readers with text descriptions of the images.
+Images can be resized by specifying width and height, either in pixels (e.g., 500px) or percentage (e.g., 50%).
+
+-->
+
+    <a href="https://www.google.com/" target="_blank"
+      ><img
+        src="Frado.png"
+        width="400"
+        alt="Frado Image"
+        title="Frado Image "
+      />
+    </a>
+
+    <!-- Bold, Italic and Under line tags:
+
+<b></b> is used to bold a text.
+<i></i> is used to itallic a text.
+<u></u> is used to underline a text. -->
+    <hr />
+    <ul type="circle">
+      <li><b>This is bold text.</b></li>
+      <li><i>This is ittalic text.</i></li>
+      <li><u>This is underline text.</u></li>
+    </ul>
+
+    <!-- The br Tag:
+
+The <br> tag in HTML is used to insert a line break, meaning it moves the content following it to the next line. It’s an empty tag, so it doesn’t require a closing tag.
+
+Syntax:
+
+Line of text.<br>Another line of text.
+
+The <br> tag forces a line break, unlike the <p> tag which adds space between paragraphs.
+It’s useful for breaking text or adding single-line spacing in places like addresses or poetry. -->
+    <br />
+
+    <!-- Big and Samll tags:
+
+The <big> and <small> tags in HTML are used to increase or decrease the size of the text, respectively. However, these tags are considered outdated (deprecated in HTML5) and are not widely recommended for modern web development. Instead, CSS should be used for styling text. Still, here’s how these tags work: -->
+
+    <ul type="square">
+      <li><small>This is a small text</small></li>
+      <li><big>This is a big text</big></li>
+    </ul>
+
+    <!-- hr tag:
+
+The <hr> tag in HTML is used to create a horizontal line, often used to visually separate content. It is a self-closing tag and doesn’t require a closing tag.
+
+The <hr> tag visually separates sections of content with a horizontal line.
+It can be styled using CSS for custom thickness, color, and style. -->
+
+    <hr />
+
+    <!-- Super Script and Sub Script Tags:
+
+In HTML, the <sup> and <sub> tags are used to format text as superscript or subscript, respectively. These tags are commonly used for mathematical expressions, chemical formulas, footnotes, and more.
+
+The <sup> tag is used to display text slightly above the baseline.
+
+The <sub> tag is used to display text slightly below the baseline.
+
+  <sup>: Renders text as superscript (e.g., exponents, footnotes).
+  <sub>: Renders text as subscript (e.g., chemical formulas, indices).
+  These tags are particularly useful for scientific and mathematical notations. -->
+
+    <p>
+      This is a sub script ---> H<sub>2</sub>O, C + O<sub>2</sub> -----> CO<sub
+        >2</sub
+      >
+    </p>
+    <p>This is a super script ---> 2*4<sup>5</sup></p>
+    <hr />
+    <!-- Pre Tag:
+
+      The <pre> tag in HTML is used to display preformatted text. It preserves both spaces and line breaks, meaning the text inside this tag will appear exactly as it is written in the HTML source. This is useful for displaying code, poems, or any text where spacing and line breaks are important.
+
+  The <pre> tag maintains the original spacing, indentation, and line breaks.
+  It's commonly used for displaying code snippets or any text that requires exact formatting.
+  Unlike the <p> or other tags, the <pre> tag does not collapse multiple spaces or ignore line breaks. -->
+
+    <pre>
+      Beneath the stars, a world unfolds,  
+      A tapestry of tales untold.  
+      Mountains rise and rivers wind,  
+      The secrets of the earth to find.  
+      
+      The moonlight casts a silver glow,  
+      On fields where gentle breezes blow.  
+      The forest hums with life at night,  
+      A chorus sung beyond our sight.  
+      
+      Oceans roar with ancient might,  
+      Their depths conceal a mystic light.  
+      The waves that crash upon the shore,  
+      Have whispered truths forevermore.  
+      
+      Time, a river, flows unbound,  
+      Through silent valleys, without sound.  
+      The trees have stood a thousand years,  
+      Their roots entangled with our fears.  
+      
+      Yet through it all, the heart persists,  
+      In every storm, in every mist.  
+      A flame that flickers, never dies,  
+      It reaches for the endless skies.  
+      
+      So walk the path, though dark it seems,  
+      And trust the light within your dreams.  
+      For though the night is long and cold,  
+      The dawn will break in hues of gold.
+      </pre
+    >
+    <hr />
+
+    <!-- Div Tag:
+
+
+The <div> tag in HTML is used as a container to group together HTML elements. It doesn’t have any specific visual representation on its own but is incredibly useful for layout purposes and applying styles via CSS. You can think of it as a way to logically divide your HTML content into sections.
+
+  Block-level Element: The <div> tag creates a block-level container, meaning it starts on a new line and takes up the full width available.
+    Styling: It’s often used with CSS for layout control. You can style it with background colors, borders, padding, margins, and more.
+    Grouping Elements: <div> is ideal for grouping elements together for styling or scripting purposes. For example, you might wrap several elements inside a <div> to apply the same styles to them or to organize your HTML structure. -->
+    <div class="container">This is a div.</div>
+    <hr />
+
+    <!-- Span Tag:
+
+The <span> tag in HTML is an inline container typically used to apply styles or scripts to specific parts of text or other inline elements. Unlike the <div> tag, which is a block-level element, the <span> tag doesn’t force a new line and is mainly used to style small chunks of content within a larger block of text.
+
+  Inline Element: The <span> tag does not start on a new line and only takes up as much width as its content.
+    Styling Specific Text: It’s commonly used when you want to apply styles like color, font weight, or background to a part of a sentence or phrase.
+    Scripting: It’s often used with JavaScript to manipulate specific portions of the page without affecting the entire block.
+
+    Styling Parts of a Text: If you want to style just one word or a small part of a paragraph, the <span> tag is a great choice.
+      Embedding Icons or Images: You can use <span> to wrap inline elements like icons or images within text.
+      JavaScript Targeting: Similar to <div>, you can target <span> elements with JavaScript to change their content, style, or behavior dynamically. -->
+
+    <p>
+      This is a span text with the
+      <span class="highlight">Higlighted</span> keyword.
+    </p>
+
+    <!-- List Tag:
+
+In HTML, lists are used to organize content in a structured and easy-to-read way. There are three main types of list tags:
+
+  1. Ordered Lists (<ol>)
+  2. Unordered Lists (<ul>)
+  3. Description Lists (<dl>)
+
+    1. Ordered List (<ol>)
+      An ordered list is a numbered list. It uses the <ol> tag to define the list and <li> tags for each list item. The numbers can be automatically generated and the numbering style can be customized.
+
+        Default numbering (1, 2, 3…) can be changed to Roman numerals, letters, etc.
+        Great for step-by-step instructions or ranked lists.
+
+    2. Unordered List (<ul>)
+      An unordered list is a bullet-pointed list. It uses the <ul> tag for the list and <li> for each item.
+
+        Bullet points by default, but can be styled with CSS to use other symbols like squares, circles, or custom images.
+        Perfect for lists where the order doesn't matter.
+
+    3. Description List (<dl>)
+      A description list is used for definitions, terms, or other name/value pairs. It uses the <dl> (description list) tag, along with <dt> (description term) and <dd> (description definition) tags.
+
+      Great for glossaries, FAQs, or any scenario where terms need to be described.
+
+      You can nest lists (e.g., a <ul> inside an <li>).
+        Lists can be styled extensively with CSS to change bullet points, numbering, and spacing. -->
+
+    <h2>This is an ordered list:</h2>
+    <ol type="i">
+      <li>Pakistan</li>
+      <li>Turkey</li>
+      <li>Dubai</li>
+      <li>Iran</li>
+    </ol>
+
+    <h2>This is an unordered list:</h2>
+    <ul type="circle">
+      <li>Country</li>
+      <li>Province</li>
+      <li>Division</li>
+      <li>District</li>
+      <li>Tehsil</li>
+    </ul>
+
+    <h2>This is a description list:</h2>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language, used to structure content on the web.</dd>
+
+      <dt>CSS</dt>
+      <dd>
+        Cascading Style Sheets, used for styling the appearance of web content.
+      </dd>
+
+      <dt>JavaScript</dt>
+      <dd>A programming language used to make web pages interactive.</dd>
+
+      <dt>API</dt>
+      <dd>
+        Application Programming Interface, a set of tools and protocols for
+        building software and applications.
+      </dd>
+    </dl>
+    <hr />
+
+    <!-- Table in HTML:
+
+HTML tables are used to display tabular data in a structured grid of rows and columns. A table consists of several elements like the table itself, rows, headers, and cells.
+
+Basic Structure of an HTML Table:
+<table>: The main container for the table.
+<tr>: Defines a row within the table.
+<th>: Defines a header cell (bold and centered by default).
+<td>: Defines a standard data cell.
+
+<table>: This defines the table.
+<tr> (Table Row): Used to define a row in the table.
+<th> (Table Header): Used for the header cells, which are styled differently (bold and centered by default).
+<td> (Table Data): Represents individual cells within the table.
+
+Colspan and Rowspan: These attributes allow a cell to span multiple columns or rows.
+
+<caption>: Provides a title for the table.
+  <thead>, <tbody>, <tfoot>: These elements are used to group header, body, and footer sections in a table, respectively, which can be helpful for styling or when working with table data. -->
+
+    <h2>Table in HTML:</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Marks</th>
+        <th>percentage</th>
+      </tr>
+      <tr>
+        <td>Ayan</td>
+        <td>900</td>
+        <td>81%</td>
+      </tr>
+      <tr>
+        <td>Ali</td>
+        <td>800</td>
+        <td>67%</td>
+      </tr>
+      <tr>
+        <td>Azan</td>
+        <td>700</td>
+        <td>70%</td>
+      </tr>
+      <tr>
+        <td>Afnan</td>
+        <td>600</td>
+        <td>65%</td>
+      </tr>
+    </table>
+    <hr />
+
+    <!-- Forms in HTML: 
+
+
+HTML forms are used to collect user input and send it to a server for processing. Forms consist of various input elements, such as text fields, checkboxes, radio buttons, and submit buttons, to gather information from users.
+
+Basic Structure of an HTML Form:
+<form>: The container for all input elements.
+<input>: Used for various input types, such as text, password, email, and more.
+<label>: Defines a label for form elements.
+<textarea>: A multi-line text input field.
+<button> or <input type="submit">: For submitting the form.
+
+  Key Components:
+  <form action="/submit_form" method="post">: This specifies where the form data is sent (action) and the HTTP method (method). In this case, the form data will be sent to /submit_form using the POST method.
+  
+  <label>: The <label> tag is associated with the corresponding input field using the for attribute. Labels improve accessibility.
+  
+  <input type="text">: Creates a single-line text input field where users can type their name.
+  
+  <input type="email">: Ensures the user enters a valid email format.
+  
+  <textarea>: A multi-line text input field for longer user input.
+  
+  <input type="submit">: This button submits the form. When clicked, the form data is sent to the server.
+
+  Form Input Types:
+  Text Field: <input type="text">
+  Password Field: <input type="password">
+  Email Field: <input type="email">
+  Number Field: <input type="number">
+  Radio Buttons: <input type="radio">
+  Checkboxes: <input type="checkbox">
+  Dropdown (Select Box): <select> -->
+
+    <h2>Form in HTML:</h2>
+
+    <form action="action_page.php" method="get">
+      <div>
+        <label for="fname">First Name:</label>
+        <input
+          type="text"
+          id="fname"
+          placeholder="Enter your first name"
+          name="fname"
+          minlength="3"
+          maxlength="12"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="lname">Last Name:</label>
+        <input
+          type="text"
+          id="lname"
+          placeholder="Enter your last name"
+          name="lname"
+          minlength="3"
+          maxlength="12"
+          required
+        />
+      </div>
+      <br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter a password"
+        name="password"
+        minlength="3"
+        maxlength="12"
+        required
+      />
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        max="10"
+        min="4"
+        placeholder="Enter your Email"
+      />
+      <br />
+      <br />
+      <label for="phone">Phone:</label>
+      <input
+        type="tel"
+        required
+        placeholder="0344-2989-881"
+        pattern="[0-9]{4}-[0-9]{4}-[0-9]{3}"
+      />
+      <br />
+      <br />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" />
+
+      <br /><br />
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" min="1" max="99" value="1" required /><br /><br />
+
+      <label for="qualifications">Select Your Qualifications:</label>
+
+      <label for="matric">Matric</label>
+      <input type="radio" id="matric" value="matric" name="qualifications" />
+      <label for="inter">Intermediate</label>
+      <input type="radio" id="inter" value="inter" name="qualifications" />
+      <label for="graduation">Graduation</label>
+      <input
+        type="radio"
+        id="graduation"
+        value="graduation"
+        name="qualifications"
+      />
+      <label for="master">Master</label>
+      <input type="radio" id="master" value="master" name="qualifications" />
+      <label for="phd">PhD</label>
+      <input type="radio" id="phd" value="phd" name="qualifications" /> <br />
+      <br />
+
+      <label for="city">Select Your City:</label>
+      <select name="city" id="city">
+        <option value="swat">Swat</option>
+        <option value="peshawar">Peshawar</option>
+        <option value="mardan">Mardan</option>
+        <option value="islamabad">Islamabad</option>
+        <option value="lahore">Lahore</option>
+        <option value="karachi">Karachi</option>
+        <option value="faisalabad">Faisalabad</option>
+        <option value="multan">Multan</option>
+        <option value="abbattabad">Abbattabad</option>
+      </select>
+      <br /><br />
+
+      <label for="gender">Select Your Gender:</label>
+      <label for="male">Male</label>
+      <input type="checkbox" name="male" id="male" />
+      <label for="female">Female</label>
+      <input type="checkbox" name="female" id="female" />
+      <label for="neutral">Neutral</label>
+      <input type="checkbox" name="neutral" id="neutral" />
+      <br /><br />
+
+      <label for="comment">Comment:</label>
+      <textarea
+        name="comment"
+        id="comment"
+        cols="20"
+        rows="5"
+        placeholder="Enter your comment"
+      ></textarea>
+      <br /><br />
+
+      <label for="image">Add Your Image:</label>
+      <input
+        type="file"
+        name="file"
+        id="file"
+        accept="image/png,image/jpeg"
+      /><br /><br />
+
+      <label for="time">Select Time:</label>
+      <input type="time" name="time" id="time" /><br /><br />
+
+      <label for="url">Enter Your Website:</label>
+      <input
+        type="url"
+        name="url"
+        id="url"
+        placeholder="www.google.com"
+      /><br /><br />
+
+      <label for="range">Range:</label>
+      <input type="range" name="range" id="range" /> <br /><br />
+
+      <label for="color">Pick Your Favorite Color:</label>
+      <input type="color" name="color" id="color" /> <br /><br />
+
+      <label for="week">Select a Week:</label>
+      <input type="week" name="week" id="week" /><br /><br />
+
+      <label for="month">Select a Month:</label>
+      <input type="month" name="month" id="month" /><br /><br />
+
+      <label for="search">Search:</label>
+      <input type="search" name="search" id="search" /><br /><br />
+
+      <label for="image">Upload an Image:</label>
+      <input type="image" name="image" id="image" /> <br />
+      <br />
+      <label for="reset">Reset</label>
+      <input type="reset" id="reset" />
+      <br /><br />
+
+      <label for="submit">Submit</label>
+      <input type="submit" name="submit" id="submit" />
+    </form>
+    <br />
+    <hr />
+    <hr />
+
+    <!-- 
+    In HTML, the <input> element is used within forms to create interactive fields where users can enter data. There are many different types of input fields that can be specified using the type attribute of the <input> tag. Here's a list of all the input types:
+
+    text: A single-line text field (default input type).
+    
+    <input type="text">
+    password: A single-line text field where the characters are hidden (e.g., for passwords).
+    
+    <input type="password">
+    email: A field for entering an email address.
+    
+    <input type="email">
+    number: A field for entering a numeric value.
+
+    <input type="number">
+    tel: A field for entering a telephone number.
+
+    <input type="tel">
+    url: A field for entering a URL (web address).
+
+    <input type="url">
+    search: A single-line text field specifically for entering search queries.
+
+    <input type="search">
+    date: A field for selecting a date.
+
+    <input type="date">
+    datetime-local: A field for selecting a date and time (no time zone).
+
+    <input type="datetime-local">
+    month: A field for selecting a month and year.
+
+    <input type="month">
+    week: A field for selecting a specific week.
+ 
+    <input type="week">
+    time: A field for selecting a specific time (hours and minutes).
+
+    <input type="time">
+    color: A field for choosing a color.
+
+    <input type="color">
+    checkbox: A field for selecting a true/false value or multiple options from a set.
+
+    <input type="checkbox">
+    radio: A field for selecting one option from a set.
+
+    <input type="radio">
+    range: A slider control for selecting a numeric value within a given range.
+ 
+    <input type="range">
+    file: A field for selecting files from the user's device.
+
+    <input type="file">
+    submit: A button for submitting the form data.
+
+    <input type="submit">
+    reset: A button for resetting all form fields to their default values.
+
+    <input type="reset">
+    button: A clickable button (often used with JavaScript).
+
+    <input type="button">
+    hidden: A field that is invisible to the user but stores data that can be submitted with the form.
+
+    <input type="hidden">
+    image: A submit button displayed as an image.
+    <input type="image"> -->
+
+    <!-- Video Tag:
+
+
+The <video> tag in HTML is used to embed video content in a webpage. It provides various attributes to control playback, display controls, and other features.
+
+  Key Attributes of the <video> Tag:
+    1. src: Specifies the URL of the video file.
+    2. controls: Adds play, pause, volume, and other video controls.
+    3. autoplay: Automatically starts playing the video as soon as it is loaded (be aware of user experience issues, as some browsers may block autoplay).
+    4. loop: Replays the video once it reaches the end.
+    5. muted: Starts the video without sound.
+    6. poster: Specifies an image to be shown while the video is loading, or until the user plays the video.
+    7. preload: Specifies how the video should be loaded when the page loads. Possible values:
+
+    auto: Loads the entire video.
+    metadata: Loads only video metadata (like duration).
+    none: Does not load the video until the user plays it.
+     -->
+
+    <h2>Here is the video:</h2>
+    <video
+      src="video.mp4"
+      height="200"
+      width="400"
+      controls
+      poster="Frado.png"
+    ></video>
+    <br />
+    <hr />
+
+    <!-- Audio Tag:
+
+The <audio> tag in HTML is used to embed sound or music in a webpage. It provides various attributes that allow for controlling playback, such as play, pause, and volume control.
+
+  Key Attributes of the <audio> Tag:
+    1. src: Specifies the URL of the audio file.
+    2. controls: Adds built-in play, pause, volume, and other audio controls.
+    3. autoplay: Starts playing the audio automatically once it loads.
+    4. loop: Repeats the audio once it finishes.
+    5. muted: Starts the audio without sound.
+    6. preload: Specifies whether the audio should be loaded when the page loads. It has three possible values:
+
+    auto: The entire file is downloaded when the page loads.
+    metadata: Only the metadata (e.g., duration, dimensions) is loaded.
+    none: The audio file is not loaded until the user initiates playback.
+
+    Similar to the <video> tag, the <audio> tag allows you to include multiple <source> elements to specify different file formats for browser compatibility.
+      The fallback text inside the <audio> tag, like "Your browser does not support the audio tag", is displayed if the browser cannot play the audio format. -->
+
+    <h2>Here is the audio to play:</h2>
+    <audio src="audio.mp3" controls></audio><br />
+    <hr />
+
+    <!-- Base Tag:
+
+The <base> tag in HTML specifies the base URL for all relative URLs in a document. It should be placed inside the <head> section and only one <base> element is allowed in an HTML document.
+
+  Key Attributes:
+  1. href: Specifies the base URL to be used for all relative links and resources in the document.
+  2. target: Specifies the default target for all hyperlinks and forms in the document. It can take the following values:
+
+  _self: Opens the linked document in the same window/tab (default behavior).
+  _blank: Opens the linked document in a new window/tab.
+  _parent: Opens the linked document in the parent frame.
+  _top: Opens the linked document in the full body of the window.
+
+  3. The <base> tag is useful for documents that contain multiple relative links, as it sets a single reference point for those links.
+  4. Only one <base> tag can be included in a document, and it must appear within the <head> section. -->
+
+    <!-- <em> tage:
+
+  The <em> tag in HTML is used to emphasize text, typically rendering it in italic by default in most browsers. The emphasis conveyed by the <em> tag is usually for semantic purposes, meaning it gives special importance to the content it wraps and indicates to screen readers and search engines that the text is emphasized.
+
+ Semantic Emphasis: The <em> tag carries semantic meaning, indicating that the enclosed text should be read with emphasis. This is particularly important for accessibility (e.g., screen readers).
+
+   Nested Emphasis: If <em> tags are nested, the emphasis typically becomes stronger:
+
+<em> vs <i>:
+The <em> tag has a semantic purpose, while the <i> tag is purely visual (italic text). It’s recommended to use <em> when you want to emphasize meaning, and <i> when you just want italic styling without additional meaning. -->
+
+    <em>This text is emphasized</em>
+    <p>This is the <del>text</del> word which is deleted.</p>
+    <p>This is the <ins>text</ins> word which is inserted.</p>
+    <hr />
+
+    <!-- Blockquote tag:
+
+The <blockquote> tag in HTML is used to define a section that is quoted from another source. It is typically displayed as an indented block of text, often used for longer quotations that stand out from the rest of the content.
+
+  Attributes:
+  1. cite (optional): Specifies the URL of the source being quoted. This attribute is not displayed visually, but it can be useful for accessibility or when processing the HTML with a tool.
+  2. Use the <blockquote> tag for block-level quotations, which are usually longer quotes and need to be visually separated from the surrounding text.
+  3. For shorter, inline quotes, the <q> tag is preferred: -->
+    <h2>Block quote:</h2>
+    <blockquote cite="https://google.com">
+      "Success is not final, failure is not fatal: It is the courage to continue
+      that counts."
+    </blockquote>
+    <!-- q tag:
+
+The <q> tag in HTML is used for inline quotations. Unlike the <blockquote> tag, which is used for longer, block-level quotes, the <q> tag is designed for short, inline quotes within a paragraph of text. By default, browsers enclose the text inside <q> tags in quotation marks.
+
+Most browsers will automatically add quotation marks around the content inside a <q> tag, but the exact style of the quotation marks (curly or straight, single or double) depends on the browser and the language settings. -->
+
+    <h2>q tag:</h2>
+    <p>
+      He remarked,
+      <q cite="https://google.com">The early bird catches the worm.</q>
+    </p>
+    <hr />
+
+    <!-- code tag:
+
+The <code> tag in HTML is used to display a snippet of computer code or programming-related content. It is typically rendered in a monospaced (fixed-width) font by default to distinguish it from regular text. The <code> tag is an inline element, meaning it does not create a new block or break in the flow of text.
+
+  Usage:
+  The <code> tag is typically used for inline code snippets.
+  It can be used with other tags like <pre> to display larger blocks of preformatted code, preserving whitespace and formatting.
+
+  Monospace Font: By default, text inside the <code> tag is shown in a monospaced font (e.g., Courier, Consolas).
+  Inline Element: The <code> tag is inline and does not introduce a new line break. If you need a multiline code block, combine it with the <pre> tag.
+   -->
+    <h2>Code Tag</h2>
+    <pre><code>
+    def hello_world():
+        print("Hello, World!")
+    </code></pre>
+    <hr />
+    <!-- abbr tag:
+
+The <abbr> tag in HTML is used to define an abbreviation or acronym. It helps provide additional information about the abbreviated term, which is typically displayed as a tooltip when the user hovers over the abbreviation in most browsers. This is useful for making content more accessible and informative.
+
+  <abbr title="Full term">Abbreviation</abbr> -->
+    <h2>Abbreviation Tag:</h2>
+    <p>
+      The <abbr title="Hypertext Markup Language">HTML</abbr> is the standard
+      language for creating web pages.
+    </p>
+    <hr />
+
+    <!-- Cite Tag:
+
+The <cite> tag in HTML is used to indicate a citation or reference to a source, such as the title of a book, article, movie, or other creative work. By default, most browsers render the content inside the <cite> tag in italic, though the actual styling can be customized with CSS.
+
+  Syntax:
+  <cite>Title of the work or source</cite>
+
+  The <cite> tag adds semantic meaning to content, helping browsers and screen readers understand that the enclosed text is a citation or title. -->
+
+    <h2>Cite Tag:</h2>
+    <p>
+      In the article <cite>"The Impact of Social Media on Education"</cite>, the
+      author explores the effects of online interaction on learning.
+    </p>
+    <hr />
+
+    <!-- dfn Tag:
+
+The <dfn> tag in HTML is used to define a definition of a term. When the term is introduced in a document, the <dfn> tag is used to indicate that this is the defining instance of the term. Typically, browsers display it in italic, but this can vary based on styling.
+
+  Syntax:
+  <dfn>Term being defined</dfn>
+
+  The <dfn> tag is used to mark the first occurrence of a term or phrase in a document where it is being defined.
+
+  The term inside the <dfn> tag is often followed by its definition in the text.
+
+  title (optional): You can use the title attribute to provide more information about the defined term, though this is not a common practice with <dfn>. -->
+
+    <h2>dfn tag:</h2>
+    <p>
+      The <dfn title="Cascading Style Sheets">CSS</dfn> is a style sheet
+      language used for describing the presentation of a document written in
+      HTML or XML.
+    </p>
+    <hr />
+
+    <!-- kbd Tag:
+
+The <kbd> tag in HTML is used to represent user input, typically from a keyboard, but it can also represent other types of input, such as voice commands, touch gestures, or any other input device. Text inside the <kbd> tag is usually rendered in a monospaced (fixed-width) font, similar to how code or keyboard inputs are displayed.
+
+  Syntax:
+  <kbd>User input</kbd>
+
+Usage:
+  The <kbd> tag is used when referring to specific keyboard keys or other types of user input in documentation or instructions.
+  It is commonly used in tutorials, guides, and software documentation to show users what keys or commands to press. -->
+
+    <h2>Kbd Tag:</h2>
+    <p>To save your file, press <kbd>Ctrl</kbd> + <kbd>S</kbd>.</p>
+    <hr />
+
+    <!-- <samp> tag:
+
+The <samp> tag in HTML is used to represent sample output from a computer program, such as the output of a script or command. It is typically displayed in a monospaced (fixed-width) font by default, similar to other tags like <code> and <kbd>, which help distinguish the sample output from regular text.
+
+    Syntax:
+    <samp>Sample output goes here</samp>
+
+  Usage:
+    The <samp> tag is used to indicate that the text within it is computer-generated output.
+    It is commonly used in documentation, programming tutorials, or guides where showing the output of commands, scripts, or applications is necessary. -->
+
+    <h2>kbd tag:</h2>
+    <p>
+      The program will display the following output: <samp>Hello, World!</samp>
+    </p>
+    <hr />
+
+    <!-- <var> tag:
+
+  The <var> tag in HTML is used to define a variable in mathematical expressions or programming contexts. Text inside the <var> tag is typically rendered in italic by default in most browsers, to indicate that the enclosed text represents a variable or symbolic name.
+
+    Syntax:
+    <var>variable name</var> -->
+
+    <h2>var tag:</h2>
+    <p>
+      The formula for the area of a circle is <var>A</var> = π<var>r</var
+      ><sup>2</sup>, where <var>r</var> is the radius of the circle.
+    </p>
+    <hr />
+
+    <!-- <bdi> tag:
+
+
+The <bdi> (Bidirectional Isolation) tag in HTML is used to isolate a section of text that might have different text directionality than the surrounding content. It ensures that the directionality of the enclosed text is preserved and does not affect the surrounding text, which is especially useful when embedding snippets of content like usernames or dynamic data that might be in an unfamiliar language or script.
+
+    Syntax:
+    <bdi>text to be isolated</bdi>
+
+    Usage:
+    The <bdi> tag is particularly helpful in bidirectional text environments, where both left-to-right (LTR) and right-to-left (RTL) scripts coexist (e.g., English and Arabic or Hebrew).
+    It's commonly used to isolate dynamic content, such as usernames, file names, or other user-generated content that may have different text directionality. -->
+    <h2>bdi tag:</h2>
+    <p>User <bdi>استخدم</bdi> commented on your post.</p>
+    <hr />
+
+    <!-- <bdo> tag:
+
+
+  The <bdo> (Bidirectional Override) tag in HTML is used to explicitly override the current text direction of its content, allowing you to force the text inside to be displayed in a left-to-right (LTR) or right-to-left (RTL) direction. It is commonly used when displaying content that needs to appear in a specific direction regardless of its surrounding text or inherent directionality.
+
+    Syntax:
+    <bdo dir="ltr">Left to right text</bdo>
+    or
+    <bdo dir="rtl">Right to left text</bdo>
+
+    Attributes:
+    dir (Required): Specifies the text direction.
+    "ltr": Left-to-right direction.
+    "rtl": Right-to-left direction. -->
+
+    <h2>bdo tag:</h2>
+    <p>
+      Here is an English word displayed right-to-left:
+      <bdo dir="rtl">Hello</bdo>.
+    </p>
+    <hr />
+
+    <!-- <iframe> tag: 
+
+  The <iframe> tag in HTML is used to embed another HTML document within the current page. This allows you to display external web content (such as a website, video, or map) inside a rectangular frame on your webpage. The content inside the <iframe> is separate from the main page and can include its own HTML, CSS, and JavaScript.
+
+    Syntax:
+    <iframe src="URL" width="width" height="height"></iframe>
+    Example:
+    <iframe src="https://www.example.com" width="600" height="400"></iframe>
+
+    Key Attributes:
+    src (Required): Specifies the URL of the webpage or content to be embedded.
+    width: Specifies the width of the <iframe> in pixels or as a percentage.
+    height: Specifies the height of the <iframe> in pixels or as a percentage.
+    title: Provides a brief description of the content inside the iframe, useful for accessibility.
+    sandbox: Adds security restrictions on the content inside the iframe (e.g., blocking scripts, preventing form submissions).
+    allow: Defines a list of features (e.g., autoplay, fullscreen) that the iframe is allowed to use.
+    loading: Specifies when the iframe should load its content. Options are:
+    "lazy": Load the iframe when it's close to entering the viewport (lazy loading).
+    "eager": Load the iframe immediately. -->
+    <h2>iframe tag:</h2>
+    <iframe
+      width="260"
+      height="115"
+      src="https://www.youtube.com/embed/Zsiwnn4384k?si=JG7ziW1AK8vvA1mD"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <hr />
+
+    <!-- embed tag:
+
+The <embed> tag in HTML is used to embed external content, such as multimedia files, plugins, or interactive content, directly into a webpage. The <embed> tag is a self-closing tag and does not have a closing tag. It is commonly used to embed files like PDFs, audio, video, or other types of content that need a plugin or external application to display or play.
+
+  Syntax:
+
+  <embed src="URL" type="MIME_type" width="width" height="height">
+  Example:
+
+  <embed src="sample.pdf" type="application/pdf" width="600" height="500">
+  This example embeds a PDF file within the webpage, displaying it in a 600x500 pixel frame.
+  
+  Key Attributes:
+  src (Required): Specifies the URL of the external content you want to embed (e.g., a file, multimedia, or other resources).
+  type: Specifies the MIME type of the embedded content (e.g., "application/pdf", "video/mp4", "audio/mpeg").
+  width: Specifies the width of the embedded content in pixels or as a percentage.
+  height: Specifies the height of the embedded content in pixels or as a percentage.
+ 
+  Use Cases:
+  Embedding PDF Files: You can use <embed> to embed PDF documents directly on a webpage.
+ 
+  Embedding Video Files: If you're embedding a video directly from a file, you can use the <embed> tag.
+
+  Embedding Audio Files: You can also embed audio files directly into your webpage.
+
+  MIME Types:
+  When using <embed>, you should provide the correct MIME type to ensure that the browser knows how to handle the embedded content. Here are some common MIME types:
+  
+  PDF: application/pdf
+  MP3: audio/mpeg
+  MP4: video/mp4
+  WebM: video/webm
+  SWF (Flash): application/x-shockwave-flash (Deprecated, not recommended)
+  
+  Difference Between <embed> and <iframe>:
+  <embed> is generally used for embedding multimedia content like PDFs, audio, and video. It can load plugins and external resources.
+  <iframe> is used to embed entire HTML documents, such as another webpage or an external service like Google Maps or YouTube. It provides more control over content and is often used for displaying dynamic content. -->
+
+    <h2>embed tag:</h2>
+    <embed
+      src="HTML_Complete_Notes.pdf"
+      type="application/pdf"
+      width="400"
+      height="300"
+    />
+    <hr />
+
+    <!-- object tag: 
+
+The <object> tag in HTML is used to embed different types of external content, such as images, audio, video, PDFs, or even entire web pages, within a webpage. It provides a more flexible method than the <embed> tag, as it can handle a variety of content types and allows for fallback content if the embedded resource is not supported or cannot be loaded.
+
+  Syntax:
+  <object data="URL" type="MIME_type" width="width" height="height">
+    Fallback content (optional)
+  </object>
+  Example:
+
+  <object data="sample.pdf" type="application/pdf" width="600" height="400">
+    Your browser does not support PDFs. Please download the file <a href="sample.pdf">here</a>.
+  </object>
+
+  Fallback Content:
+One of the main advantages of the <object> tag over other embedding methods (like <embed>) is the ability to provide fallback content. This is useful for ensuring that users with older browsers or devices can still access the content in an alternative format, or at least receive a helpful message.
+
+  Difference Between <object> and <embed>:
+    <object> can handle fallback content and allows for more control over the embedded object, including interactivity and form association.
+    <embed> is simpler and used primarily for multimedia, but it does not support fallback content.
+    <object> is more flexible as it can handle a wider variety of MIME types. -->
+    <h2>object tag:</h2>
+    <object
+      data="HTML_Complete_Notes.pdf"
+      type="application/pdf"
+      width="300"
+      height="150"
+    >
+      Your browser does not support PDFs. Please download the PDF file
+      <a href="HTML_Complete_Notes.pdf">here</a>.
+    </object>
+    <hr />
+
+    <!-- <param> tag: 
+
+The <param> tag in HTML is used within the <object> tag to specify parameters for the embedded object. It allows you to define settings or configurations for the content being embedded, such as player options for videos or specific display settings for multimedia files. The <param> tag is typically used in conjunction with the <object> tag.
+
+  Syntax:
+  <object data="URL" type="MIME_type" width="width" height="height">
+    <param name="parameter_name" value="parameter_value">
+    Fallback content (optional)
+  </object>
+  Example:
+
+  <object data="movie.mp4" type="video/mp4" width="640" height="360">
+    <param name="autoplay" value="true">
+    <param name="loop" value="true">
+    Your browser does not support this video format. Please download the video <a href="movie.mp4">here</a>. -->
+    <h2>param tag:</h2>
+    <object data="video.mp4" type="video/mp4" width="200" height="100">
+      <param name="autoplay" value="false" />
+      <param name="controls" value="false" />
+      Your browser does not support the video format. Please download it
+      <a href="video.mp4">here</a>.
+    </object>
+    <hr />
+    <hr />
+
+    <!-- <map> tag:
+
+  The <map> tag in HTML is used to define an image map, which allows you to create clickable areas (hotspots) on an image. Each area can link to different destinations, making it possible to turn a single image into multiple interactive links. The <map> tag works in conjunction with the <area> tag, which defines the clickable regions within the image map.
+
+    Example:
+    <img src="planets.jpg" usemap="#planetmap" alt="Planets">
+    
+    <map name="planetmap">
+      <area shape="rect" coords="34,44,270,350" href="earth.html" alt="Earth">
+      <area shape="circle" coords="337,300,44" href="mars.html" alt="Mars">
+      <area shape="poly" coords="300,100,400,150,450,250,200,300" href="jupiter.html" alt="Jupiter">
+    </map>
+
+    Explanation:
+    <img> Tag: The image that will have the clickable areas. The usemap attribute specifies which map to use by referencing the name of the <map>.
+    <map> Tag: Defines the image map and contains one or more <area> elements.
+    <area> Tag: Defines each clickable area within the image map.
+    shape: Specifies the shape of the area (rect, circle, or poly).
+    coords: Defines the coordinates of the shape:
+    rect: Takes four values (x1, y1, x2, y2) which define the top-left and bottom-right corners.
+    circle: Takes three values (x, y, radius) which define the center and radius of the circle.
+    poly: Takes pairs of coordinates (x1, y1, x2, y2, etc.) that define the vertices of the polygon.
+    href: The URL where the user will be directed when they click on that area.
+    alt: Provides alternative text for the area, improving accessibility.
+    Shape Types:
+    Rectangular Area: Defined by the rect shape.
+    
+    Example: coords="34,44,270,350" defines a rectangle with two corners at (34,44) and (270,350).
+    Circular Area: Defined by the circle shape.
+    
+    Example: coords="337,300,44" defines a circle with center (337,300) and radius 44.
+    Polygonal Area: Defined by the poly shape.
+    
+    Example: coords="300,100,400,150,450,250,200,300" defines a polygon with the specified vertices.
+    Accessibility Considerations:
+    Providing meaningful alt attributes for each area enhances accessibility for screen readers and users with disabilities.
+    The image itself should also have an alt attribute to describe the image. -->
+
+    <h2>Map Tag:</h2>
+    <img src="Frado.png" usemap="#frado" alt="Fradu" />
+
+    <map name="frado">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        href="https:www.youtube.com"
+        alt="YouTube"
+      />
+      <area
+        shape="circle"
+        coords="337,300,44"
+        href="https:www.codewithharry.com"
+        alt="Code with harry"
+      />
+      <area
+        shape="poly"
+        coords="300,100,400,150,450,250,200,300"
+        href="https:www.instagram.com"
+        alt="Instagram"
+      />
+    </map>
+    <hr />
+    <hr />
+
+    <p style="color: red" align="center"><b>The End</b></p>
+  </body>
+</html>
+
+<!-- Copyrighted by Muhammad Ullah -->
